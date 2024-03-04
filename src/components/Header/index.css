@@ -1,0 +1,202 @@
+.nav-items-large-display {
+  display: none;
+}
+
+.header-nav-container {
+  height: 70px;
+  display: flex;
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-link-container {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 18px;
+}
+
+.header-website-logo-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-image {
+  height: 40px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.header-title {
+  font-size: 15px;
+}
+
+.small-nav-hamburger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.small-display-hamburger-options {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 33px;
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.each-option-under-hamburger {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #262626;
+}
+
+.hamburger-search-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+
+.hamburger-logout-option {
+  border: none;
+  outline: none;
+  background: #4094ef;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close-circle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  text-align: end;
+  cursor: pointer;
+}
+
+.blue-color-for-selected {
+  color: #4094ef;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav-container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .nav-items-small-display {
+    display: none;
+  }
+  .nav-items-large-display {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .small-display-hamburger-options {
+    display: none;
+  }
+
+  .search-input-and-button-container {
+    display: flex;
+    align-items: center;
+  }
+  .search-input-field-header {
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    height: 26px;
+    outline: none;
+    color: #262626;
+  }
+
+  .search-button-header-large {
+    height: 26px;
+    border: 1px solid #dbdbdb;
+    background-color: #dbdbdb;
+    color: #989898;
+    cursor: pointer;
+  }
+
+  .options-header-large {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 30px;
+  }
+
+  .option-header-text-large {
+    margin: 10px;
+  }
+
+  .logout-button-large-header {
+    border: none;
+    outline: none;
+    background: #4094ef;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+  }
+}
+
+body.light-mode {
+  .header-title {
+    color: #1b365c;
+  }
+  .option-header-text-large {
+    color: #1b365c;
+  }
+  .small-display-hamburger-options {
+    color: #1b365c;
+    background-color: #7ea1c4;
+  }
+  .hamburger-search-button {
+    color: #1b365c;
+  }
+}
+
+body.dark-mode {
+  .header-title {
+    color: #7ea1c4;
+  }
+  .option-header-text-large {
+    color: #7ea1c4;
+  }
+  .small-display-hamburger-options {
+    color: #7ea1c4;
+    background-color: #1b365c;
+  }
+  .hamburger-search-button {
+    color: #7ea1c4;
+  }
+}
